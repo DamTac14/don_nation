@@ -1,0 +1,99 @@
+/* General design for the different forms
+Add donations
+connection
+registration
+*/
+
+.form-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.form-field {
+  margin-bottom: 20px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.form-container h3 {
+  margin-bottom: 5%;
+  font-size:30px;
+  background-color: rgba(5, 81, 97, 0.15);
+  padding: 1% 6%;
+  border-radius: 15px;
+}
+
+label {
+  font-weight: bold;
+  padding-bottom: 2%;
+}
+
+/* design of differents input */
+
+.form-field input[type="email"],
+.form-field input[type="password"],
+.form-field input[type="text"],
+.form-field textarea,
+.form-field input[type="file"] {
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-top: 5%;
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color: #077187;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#showPassword {
+  font-size: 12px;
+  max-width: 150px;
+}
+
+input[type="submit"]:hover {
+  background-color: #055161;
+}
+
+.titlePrevention {
+  font-size: 12px;
+  margin-bottom: 4%;
+}
+
+/* adaptation of title */
+@media only screen and (max-width: 600px) {
+
+  .form-container h3 {
+    font-size:23px;
+  }
+}

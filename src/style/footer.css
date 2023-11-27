@@ -1,0 +1,17 @@
+/* Footer design
+which must be like to the banner */
+
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footerContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }

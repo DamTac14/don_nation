@@ -1,0 +1,143 @@
+/* Full size navigation menu design */
+
+nav {
+    margin-top: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav li {
+    display:inline-block;
+  }
+  
+  nav a {
+    font-size: 25px;
+    text-decoration: none;
+    color:#d6e3ff;
+    padding: 15px 40px;
+    background-color: #077187;
+  }
+  
+  nav li:first-child a {
+    border-radius: 40px 0px 0px 40px;
+  }
+  
+  nav li:last-child a {
+    border-radius: 0px 50px 50px 0px
+  }
+  
+  nav a:hover {
+    color:#06444d;
+    background-color: #caf4df;
+    padding: 15px 40px;
+    border-radius: 0px; 
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+  }
+  
+  nav li:first-child a:hover {
+    border-radius: 40px 0px 0px 40px;
+  }
+  
+  nav li:last-child a:hover{
+    border-radius: 0px 50px 50px 0px
+  }
+
+  /* First screen size adaptation
+  to tablet or similar sizes */
+
+  
+  @media only screen and (min-width: 600px) and (max-width: 1080px) {
+    nav {
+      margin-top: 30px;
+    }
+    
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    nav li {
+      margin: 20px;
+      display: block;
+    }
+    
+    nav a {
+      font-size: 25px;
+      padding: 15px 30px;
+      border-radius: 30px;
+    }
+    
+    nav li:first-child a {
+      border-radius: 30px;
+    }
+    
+    nav li:last-child a {
+      border-radius: 30px;
+    }
+    
+    nav a:hover {
+      padding: 15px 30px;
+      border-radius: 30px;
+    }
+    
+    nav li:first-child a:hover {
+      border-radius: 30px;
+    }
+    
+    nav li:last-child a:hover{
+      border-radius: 30px;
+    }
+  }
+  
+ /* Adaptation to smaller screen like for example phone */
+
+
+ @media only screen and (max-width: 600px) {
+    nav {
+      margin-top: 20px;
+    }
+    
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    nav li {
+      margin-bottom: 10px;
+      margin-top:15px;
+      display: block;
+    }
+    
+    nav a {
+      font-size: 20px;
+      padding: 10px 20px;
+      border-radius: 20px;
+    }
+    
+    nav li:first-child a {
+      border-radius: 20px;
+    }
+    
+    nav li:last-child a {
+      border-radius: 20px;
+    }
+    
+    nav a:hover {
+      padding: 10px 20px;
+      border-radius: 20px;
+    }
+    
+    nav li:first-child a:hover {
+      border-radius: 20px;
+    }
+    
+    nav li:last-child a:hover{
+      border-radius: 20px;
+    }
+  }

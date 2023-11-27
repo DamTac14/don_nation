@@ -1,0 +1,39 @@
+/* Design and positioning of the search bar */
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    margin-top:3%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
+  .search-container input[type="text"] {
+    width: 90%;
+    padding: 8px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+  }
+
+  /* Design of the delete input value button */
+
+  .search-container button {
+    padding: 10px 16px;
+    margin-left: 15px;
+    background-color: #E4C5AF;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .search-container button:hover {
+    background-color: #f0aa78;
+  }
