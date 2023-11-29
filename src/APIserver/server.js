@@ -311,16 +311,13 @@ app.post('/api/Reservation', authenticateToken, async function Reservation(req,r
         JOIN users AS users_donor ON donations.id_user = users_donor.id_user
         JOIN localisations ON users_donation.id_localisation = localisations.id_localisation
         WHERE reservations.id_user = ?;
-        
-        
-                  
   `, [id]
   )
         res.json(rows);
     } catch (error) {
         console.log(error);
         res.status(500).send([{ message: error }]);
-    }
+    } 
   })
 
 

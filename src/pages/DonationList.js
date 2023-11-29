@@ -2,7 +2,7 @@ import ShowDonations from "../components/Donations";
 import { useState, useEffect } from "react";
 
 import Search from "../components/searchBar";
-
+import GetAPIFunction from "../components/FunctionFactorized/GetFunction";
 
 import '../style/miniature.css'
 import '../style/fullscreen.css'
@@ -18,18 +18,15 @@ const [showReservationButton] = useState(true)
 const [data, setData] = useState([]);
 
 // Asynchronous donation display function
-const fetchDonations = async () => {
-    const url = 'http://localhost:7005/api/showDonations';
-    const response = await fetch(url, {
-        method:'GET'
-    });
-    const result = await response.json();
-    setData(result);
-};
+
 
 // useEffect which allows display after retrieving and reading data
 
 useEffect(() => {
+  const fetchDonations = async () => {
+    const DonationsData = await GetAPIFunction('ShowDonations')
+    setData(DonationsData)
+  };
   fetchDonations();
 }, []);
 
